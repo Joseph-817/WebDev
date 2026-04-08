@@ -1,0 +1,159 @@
+.parent {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+nav {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+main {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+footer {
+    grid-area: 3 / 1 / 4 / 3;
+    color: white;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    font-size: 275%;
+}
+
+nav button {
+    height: 10%;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 40%;
+    background-color: black;
+    color: #00a2ff;
+    border-radius: 35%;
+}
+
+nav button:hover,
+main button:hover {
+    background-color: #2e2e2e;
+}
+
+nav button:active,
+main button:active {
+    background-color: #616161;
+}
+
+.blue {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 20%;
+}
+
+#wrapper {
+    background-color: #000e5e;
+}
+
+main button {
+    margin-left: 1%;
+    border-radius: 20%;
+    height: 60px;
+    width: 200px;
+    background-color: black;
+    color: #00a2ff;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    nav {
+        background-color: #000e5e;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        position: static;
+    }
+
+    #studenthero {
+        height: auto;
+        background-image: url(/utahtechimages/studenthero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+    }
+
+    main button {
+        margin-left: 1%;
+        border-radius: 20%;
+        height: 60px;
+        width: 30%;
+        background-color: black;
+        color: #00a2ff;
+    }
+
+    main img {
+        float: none;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        background-image: none;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #000e5e;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        position: sticky;
+    }
+    
+    main button {
+        margin-left: 1%;
+        border-radius: 20%;
+        height: 60px;
+        width: 30%;
+        background-color: black;
+        color: #00a2ff;
+    }
+
+    #homehero {
+        display: none;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: .3fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-gap: 10px;
+        min-height: 100vh;
+    }
+}

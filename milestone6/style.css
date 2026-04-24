@@ -7,7 +7,7 @@
 
 header {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -50,8 +50,8 @@ header a:active {
 }
 
 nav button {
-    height: 10%;
-    width: 100%;
+    height: 60px;
+    width: 200px;
     font-weight: bold;
     margin-top: 40%;
     background-color: black;
@@ -83,7 +83,7 @@ main button {
     margin-left: 1%;
     border-radius: 20%;
     height: 60px;
-    width: 200px;
+    width: 30%;
     background-color: black;
     color: #00a2ff;
 }
@@ -136,7 +136,7 @@ main button {
         margin: 0;
         position: sticky;
     }
-    
+
     main button {
         margin-left: 1%;
         border-radius: 20%;
@@ -145,9 +145,11 @@ main button {
         background-color: black;
         color: #00a2ff;
     }
+
     #homehero {
         display: none;
     }
+
     .parent {
         display: grid;
         grid-template-columns: .3fr 1fr;
@@ -155,4 +157,50 @@ main button {
         grid-gap: 10px;
         min-height: 100vh;
     }
+}
+
+.placeholder {
+    width: 35%;
+}
+
+#wrapper main {
+    color: white;
+}
+
+#clank img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clank {
+    display: grid;
+    text-align: center;
+}
+
+#speed {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#heard {
+    text-decoration: none;
+    color: white;
+    cursor: text;
+}
+
+#clanker {
+    width: 100%;
+    height: 100%;
+}
+
+#pass {
+    width: 100%;
+    height: 100%;
+}
+
+#invis a {
+    text-decoration: none;
+    color: #000d53;
+    cursor: default;
 }

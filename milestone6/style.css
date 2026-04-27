@@ -26,6 +26,7 @@ main {
 footer {
     grid-area: 3 / 1 / 4 / 3;
     color: white;
+    text-align: center;
 }
 
 header img {
@@ -203,4 +204,8 @@ main button {
     text-decoration: none;
     color: #000d53;
     cursor: default;
+}
+
+#hd {
+    text-align: center;
 }
